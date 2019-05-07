@@ -27,6 +27,6 @@ source "$HOME/.zsh/aliases.sh"
 source "$HOME/.zsh/binds.sh"
 source "$HOME/.zsh/history.sh"
 
-[[ -f "/usr/share/fzf/completion.zsh" ]] && source "/usr/share/fzf/completion.zsh"
-[[ -f "/usr/share/fzf/key-bindings.zsh" ]] && source "/usr/share/fzf/key-bindings.zsh"
-
+[[ -f "/usr/local/opt/fzf/shell/completion.zsh" ]] && source "/usr/local/opt/fzf/shell/completion.zsh"
+[[ -f "/usr/local/opt/fzf/shell/key-bindings.zsh" ]] && source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+[[ -f "$HOME/.zsh/custom.sh" ]] && source "$HOME/.zsh/custom.sh"
