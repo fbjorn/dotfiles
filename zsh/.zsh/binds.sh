@@ -7,7 +7,7 @@ zle -N edit-command-line
 bindkey "^E" edit-command-line
 
 backward-kill-path() {
-    local WORDCHARS="*?_[]~=&;!#$%^(){}/"
+    local WORDCHARS="*?_[]~=&;!#$%^(){}-/"
     zle backward-kill-word
 }
 zle -N backward-kill-path
