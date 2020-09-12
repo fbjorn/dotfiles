@@ -197,3 +197,7 @@ k8s-pod-shell() {
     echo "Running ${SHELL} in ${POD}"
     kubectl -n ${NAMESPACE} exec -it ${POD} -- "$SHELL"
 }
+
+localip() {
+    ifconfig | grep 192 | awk '{print $2}'
+}
