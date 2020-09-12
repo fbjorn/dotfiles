@@ -7,7 +7,6 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
   autojump
   colored-man-pages
-  command-not-found
   gitfast
   ssh-agent
   mafredri/zsh-async
@@ -26,7 +25,4 @@ source "$HOME/.zsh/functions.sh"
 source "$HOME/.zsh/aliases.sh"
 source "$HOME/.zsh/binds.sh"
 source "$HOME/.zsh/history.sh"
-
-[[ -f "/usr/local/opt/fzf/shell/completion.zsh" ]] && source "/usr/local/opt/fzf/shell/completion.zsh"
-[[ -f "/usr/local/opt/fzf/shell/key-bindings.zsh" ]] && source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 [[ -f "$HOME/.zsh/custom.sh" ]] && source "$HOME/.zsh/custom.sh"

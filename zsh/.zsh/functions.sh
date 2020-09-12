@@ -182,3 +182,18 @@ reswap() {
     sudo swapoff -a && sudo swapon -a
 }
 
+n() {
+    HISTFILE=; PS1="inc> ";
+}
+
+k8s-pod-shell() {
+    NAMESPACE=$1
+    POD_NAME=$2
+    SHELL=${*:3}
+    if [[ $SHELL == "" ]]; then
+        SHELL="sh"
+    fi
+    POD=`kubectl -n ${NAMESPACE} get pods | grep -m1 ${POD_NAME} | awk '{ print $1 }'`
+    echo "Running ${SHELL} in ${POD}"
+    kubectl -n ${NAMESPACE} exec -it ${POD} -- "$SHELL"
+}
