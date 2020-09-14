@@ -9,8 +9,6 @@ export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export GTAGSLABEL=pygments
 
 # --- fzf ---
-[[ -f "/usr/local/opt/fzf/shell/completion.zsh" ]] && source "/usr/local/opt/fzf/shell/completion.zsh"
-[[ -f "/usr/local/opt/fzf/shell/key-bindings.zsh" ]] && source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 if which rg > /dev/null; then
     export FZF_DEFAULT_COMMAND='rg --files'
 else
@@ -64,4 +62,3 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 [[ -f "$HOME/.poetry/env" ]] && source "$HOME/.poetry/env"
-

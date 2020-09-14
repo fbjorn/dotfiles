@@ -26,3 +26,7 @@ source "$HOME/.zsh/aliases.sh"
 source "$HOME/.zsh/binds.sh"
 source "$HOME/.zsh/history.sh"
 [[ -f "$HOME/.zsh/custom.sh" ]] && source "$HOME/.zsh/custom.sh"
+
+# must be there for some reason. fuzzy ctrl+r won't work if move it to init.sh
+[[ -f "/usr/local/opt/fzf/shell/completion.zsh" ]] && source "/usr/local/opt/fzf/shell/completion.zsh"
+[[ -f "/usr/local/opt/fzf/shell/key-bindings.zsh" ]] && source "/usr/local/opt/fzf/shell/key-bindings.zsh"
